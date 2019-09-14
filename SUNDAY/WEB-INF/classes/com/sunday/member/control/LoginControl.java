@@ -71,7 +71,7 @@ public class LoginControl extends HttpServlet {
     		
     	String host = "smtp.naver.com";
 		String user = "1150amy@naver.com";
-		String password = "@song7014";
+		String password = "";
 		
 		Properties props = new Properties();
 		props.put("mail.smtp.host", host);
@@ -214,12 +214,12 @@ public class LoginControl extends HttpServlet {
     		break;
     	
 	    	case "do_login":
-				do_login(request,response);
-			break;
+			do_login(request,response);
+		break;
 			
-			case "do_logout":
-				do_logout(request,response);
-			break;
+		case "do_logout":
+			do_logout(request,response);
+		break;
 			
     	}
     }
